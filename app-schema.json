@@ -4,6 +4,7 @@
   "title": "IdealOS App",
   "description": "IdealOS system apps, user apps, services, and plugins and overlays",
   "type": "object",
+  "additionalProperties": false,
   "properties": {
     "name": {
       "type": "string"

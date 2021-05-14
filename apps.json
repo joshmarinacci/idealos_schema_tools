@@ -51,7 +51,7 @@
     {
       "name": "search-launcher",
       "title": "search launcher",
-      "entrypoint": "apps/menu/search.js"
+      "entrypoint": "apps/menu/search.js",
     }
   ],
   "sidebar-plugins": []
