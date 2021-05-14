@@ -1,0 +1,47 @@
+{
+  "$id": "https://josh.earth/idealos/apps-schema.json",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "AppList",
+  "type": "object",
+  "required": ["system","user"],
+  "properties": {
+    "starter": {
+      "$ref": "https://josh.earth/idealos/app-schema.json"
+    },
+    "system": {
+      "type": "array",
+      "description": "list of system level apps that are secure",
+      "items": {
+        "$ref": "https://josh.earth/idealos/app-schema.json"
+      }
+    },
+    "user": {
+      "type": "array",
+      "description": "list of user level apps that are insecure",
+      "items": {
+        "$ref": "https://josh.earth/idealos/app-schema.json"
+      }
+    },
+    "services": {
+      "type": "array",
+      "description": "list of headless services that are alwayw running",
+      "items": {
+        "$ref": "https://josh.earth/idealos/app-schema.json"
+      }
+    },
+    "menu-plugins": {
+      "type": "array",
+      "description": "list of apps that go into the menu",
+      "items": {
+        "$ref": "https://josh.earth/idealos/app-schema.json"
+      }
+    },
+    "sidebar-plugins": {
+      "type": "array",
+      "description": "list of apps that go into the sidebar",
+      "items": {
+        "$ref": "https://josh.earth/idealos/app-schema.json"
+      }
+    }
+  }
+}

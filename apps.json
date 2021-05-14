@@ -1,0 +1,58 @@
+{
+  "system": [
+    {
+      "name": "menbuar",
+      "entrypoint": "apps/menubar.js",
+      "groups": ["secure","menubar"]
+    },
+    {
+      "name": "sidebar",
+      "entrypoint": "apps/sidebar.js",
+      "groups": [ "sidebar", "secure"]
+    },
+    {
+      "name": "dock",
+      "entrypoint": "apps/dock.js",
+      "groups": [ "dock,", "secure"]
+    }
+  ],
+  "user": [
+    {
+      "name": "fractal",
+      "title": "Fractal App",
+      "icon": "mandlebrot",
+      "entrypoint": "apps/fractal.js"
+    },
+    {
+      "name": "guitest",
+      "title": "Cool Gui Tester",
+      "icon": "guitester",
+      "entrypoint": "apps/gui_test.js"
+    }
+  ],
+  "services": [
+    {
+      "name": "volume-overlay",
+      "title": "volume overlay",
+      "entrypoint": "apps/overlay/volume.js"
+    }
+  ],
+  "menu-plugins": [
+    {
+      "name": "battery-viewer",
+      "title": "battery viewer",
+      "entrypoint": "apps/menu/battery.js"
+    },
+    {
+      "name": "network-viewer",
+      "title": "network viewer",
+      "entrypoint": "apps/menu/wifi.js"
+    },
+    {
+      "name": "search-launcher",
+      "title": "search launcher",
+      "entrypoint": "apps/menu/search.js"
+    }
+  ],
+  "sidebar-plugins": []
+}

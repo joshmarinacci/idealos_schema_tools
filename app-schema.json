@@ -1,0 +1,29 @@
+{
+  "$id": "https://josh.earth/idealos/app-schema.json",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "IdealOS App",
+  "description": "IdealOS system apps, user apps, services, and plugins and overlays",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "icon": {
+      "type": "string"
+    },
+    "entrypoint": {
+      "type": "string"
+    },
+    "groups": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    }
+  },
+  "required": ["name","entrypoint"]
+}
