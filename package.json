@@ -1,0 +1,19 @@
+{
+  "name": "idealos_schema_tools",
+  "version": "1.0.0",
+  "description": "",
+  "main": "validate.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joshmarinacci/idealos_schema_tools.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joshmarinacci/idealos_schema_tools/issues"
+  },
+  "homepage": "https://github.com/joshmarinacci/idealos_schema_tools#readme"
+}

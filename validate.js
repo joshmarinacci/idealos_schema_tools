@@ -27,4 +27,12 @@ async function doit() {
     let valid = validate_apps_schema(data_json)
     if(!valid) console.log("errors",validate_apps_schema.errors)
 }
-doit().then(()=>(""))
+
+async function dotwo() {
+
+}
+async function doall() {
+    await doit()
+}
+
+doall().then(()=>(""))
